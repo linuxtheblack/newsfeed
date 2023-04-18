@@ -1,0 +1,9 @@
+[
+    {
+        "title": "Article title here",
+        "author": "Author Name",
+        "subTitle": "Sub title here. Two or three sentences.",
+        "article": "Full article body here.",
+        "publishedAt": "YYYY-MM-DD HH:mm:ss"
+    }
+]

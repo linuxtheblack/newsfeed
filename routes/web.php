@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Resources\articleResource;
+use App\NewsFetcher;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $news = new NewsFetcher();
+
+    // use articleResource to format the data and return it as a json response
+    return $news->fetch()->map(fn($article) => new articleResource($article));
 });
