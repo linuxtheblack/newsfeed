@@ -1,6 +1,6 @@
 <?php
 
-namespace app;
+namespace App;
 
 use App\Models\Article;
 use Illuminate\Support\Facades\File;
